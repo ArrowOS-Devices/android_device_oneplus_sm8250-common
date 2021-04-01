@@ -456,7 +456,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.audio@4.0.vendor:64 \
     android.frameworks.sensorservice@1.0.vendor \
-    android.hardware.sensors@2.0-service.multihal \
+    android.hardware.sensors@2.0-service.oneplus_kona \
     libsensorndkbridge
 
 # Soong namespaces
