@@ -177,6 +177,10 @@ ENABLE_VENDOR_RIL_SERVICE := true
 # Security patch level
 VENDOR_SECURITY_PATCH := 2022-02-01
 
+# Sensors
+SOONG_CONFIG_NAMESPACES += ONEPLUS_KONA_SENSORS
+SOONG_CONFIG_ONEPLUS_KONA_SENSORS := ALS_POS_X ALS_POS_Y
+
 # Sepolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 
