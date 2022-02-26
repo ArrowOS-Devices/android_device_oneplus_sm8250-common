@@ -367,7 +367,7 @@ public class TouchKeyHandler implements DeviceKeyHandler {
         final boolean enabled = Settings.System.getInt(mContext.getContentResolver(),
                 Settings.System.TOUCHSCREEN_GESTURE_HAPTIC_FEEDBACK, 1) != 0;
         if (enabled) {
-            mVibrator.vibrate(VibrationEffect.createPredefined(VibrationEffect.EFFECT_DOUBLE_CLICK));
+            mVibrator.vibrate(VibrationEffect.createPredefined(VibrationEffect.EFFECT_CLICK));
         }
     }
 
