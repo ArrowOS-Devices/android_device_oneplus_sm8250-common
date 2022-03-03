@@ -527,7 +527,7 @@ vendor/bin/hw/vendor.oneplus.hardware.ifaa@2.0-service
 vendor/etc/init/vendor.oneplus.hardware.ifaa@2.0-service.rc
 
 # IMS - from LA.UM.9.12.r1-13300-SMxx50.QSSI12.0
--system_ext/priv-app/ims/ims.apk|81473e942b32bc80b7772106d5bc4b375299288e
+-system_ext/priv-app/ims/ims.apk|ad5d643e4a71447facb9ed78f0ab5eb1633643c4
 system_ext/lib64/lib-imsvideocodec.so|5aed0217e9735d15e44ea6b9f397075a9b569614
 system_ext/lib64/lib-imsvt.so|8809d273ee85ddc70ed0eb69698b8eb4b71f8150
 system_ext/lib64/lib-imsvtextutils.so|16bed08e80919635fcb7ace934bd5f16f059c182
