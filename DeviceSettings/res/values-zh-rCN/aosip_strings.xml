@@ -73,4 +73,11 @@
     <string name="dolby_category">音频</string>
     <string name="dolby_title">杜比全景声</string>
     <string name="dolby_summary">根据播放的媒体内容调整音频输出</string>
+    <!-- Touchpanel -->
+    <string name="touchpanel_title">触摸屏</string>
+    <string name="edge_touch_title">解除曲面触控限制</string>
+    <string name="edge_touch_summary">改善在游戏中的多点触控体验</string>
+    <string name="edge_touch_warning">会增加误触的可能性</string>
+    <!-- Unsupported feature -->
+    <string name="unsupported_device">当前设备不支持该功能</string>
 </resources>

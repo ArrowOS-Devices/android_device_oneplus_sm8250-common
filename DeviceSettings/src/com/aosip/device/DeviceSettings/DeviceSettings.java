@@ -45,6 +45,7 @@ public class DeviceSettings extends PreferenceFragment
     public static final String KEY_HBM_SWITCH = "hbm";
     public static final String KEY_DC_SWITCH = "dc";
     public static final String KEY_NR_MODE_SWITCHER = "nr_mode_switcher";
+    public static final String KEY_EDGE_TOUCH = "edge_touch";
 
     public static final String KEY_SETTINGS_PREFIX = "device_setting_";
 
@@ -52,6 +53,7 @@ public class DeviceSettings extends PreferenceFragment
     private TwoStatePreference mDCModeSwitch;
 
     private static ListPreference mNrModeSwitcher;
+    private static TwoStatePreference mEdgeTouchSwitch;
 
     private Protocol mProtocol;
 
@@ -87,6 +89,11 @@ public class DeviceSettings extends PreferenceFragment
 
         mNrModeSwitcher = (ListPreference) findPreference(KEY_NR_MODE_SWITCHER);
         mNrModeSwitcher.setOnPreferenceChangeListener(this);
+
+        mEdgeTouchSwitch = (TwoStatePreference) findPreference(KEY_EDGE_TOUCH);
+        mEdgeTouchSwitch.setEnabled(EdgeTouchSwitch.isSupported());
+        mEdgeTouchSwitch.setChecked(EdgeTouchSwitch.isCurrentlyEnabled(this.getContext()));
+        mEdgeTouchSwitch.setOnPreferenceChangeListener(new EdgeTouchSwitch());
     }
 
     @Override

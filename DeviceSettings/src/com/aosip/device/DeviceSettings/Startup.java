@@ -35,10 +35,17 @@ public class Startup extends BroadcastReceiver {
 
     @Override
     public void onReceive(final Context context, final Intent bootintent) {
+
+        boolean enabled = false;
         TouchscreenGestureFragment.restoreTouchscreenGestureStates(context);
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
 
         restore(DCModeSwitch.getFile(),
                 sharedPrefs.getBoolean(DeviceSettings.KEY_DC_SWITCH, false));
+        
+        enabled = sharedPrefs.getBoolean(DeviceSettings.KEY_EDGE_TOUCH, true);
+        if (enabled) {
+            restore(EdgeTouchSwitch.getFile(), enabled);
+        }
     }
 }
