@@ -190,7 +190,9 @@ SOONG_CONFIG_ONEPLUS_KONA_SENSORS := \
 # Sepolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 
-BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
+BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
+PRODUCT_PRIVATE_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/private
+PRODUCT_PUBLIC_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/public
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
